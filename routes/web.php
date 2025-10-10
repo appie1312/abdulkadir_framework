@@ -3,6 +3,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\job;
 
 Route::get('/', function () {
+    $jobs = Job::all();
+
     return view('home');
 });
 
